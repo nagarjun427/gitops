@@ -20,5 +20,5 @@ spec:
   health:
     checkTimeout: 60
   scaling:
-    replicasMin: 2
+    replicasMin: 3
     replicasMax: 10
