@@ -1,0 +1,24 @@
+# Auto-managed by Origin9 Platform. Direct edits sync back automatically.
+apiVersion: cocreate.io/v1alpha1
+kind: DeploySpec
+metadata:
+  name: sprinboot-demo
+  cluster: origin9-test
+  environment: nag-dev-2
+spec:
+  source:
+    type: GIT
+    manifestType: KUSTOMIZE
+    repoUrl: https://github.com/nagarjun427/springboot-helloworld.git
+    branch: main
+    kustomizePath: .
+  sync:
+    policy: AUTO
+    interval: 180
+    autoPrune: true
+    selfHeal: true
+  health:
+    checkTimeout: 60
+  scaling:
+    replicasMin: 1
+    replicasMax: 10
