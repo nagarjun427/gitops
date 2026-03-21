@@ -9,7 +9,7 @@ spec:
   source:
     type: GIT
     manifestType: KUSTOMIZE
-    repoUrl: https://github.com/nagarjun427/springboot-helloworldd.git
+    repoUrl: https://github.com/nagarjun427/springboot-helloworld.git
     branch: main
     kustomizePath: .
   sync:
@@ -17,6 +17,7 @@ spec:
     interval: 180
     autoPrune: true
     selfHeal: true
+    cascadeDelete: false
   health:
     checkTimeout: 60
   scaling:
