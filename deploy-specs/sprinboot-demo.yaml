@@ -9,7 +9,7 @@ spec:
   source:
     type: GIT
     manifestType: KUSTOMIZE
-    repoUrl: https://github.com/nagarjun427/springboot-helloworld.git
+    repoUrl: https://github.com/nagarjun427/springboot-helloworld.gitt
     branch: main
     kustomizePath: .
   sync:
